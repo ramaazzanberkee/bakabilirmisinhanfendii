@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow: hidden;
+}
+
+#mainContainer {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    position: relative;
+    min-height: 200px; /* Büyüyen buton için alan */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#yesBtn {
+    background-color: #34c759;
+    color: white;
+    position: relative;
+    z-index: 100; /* Her zaman üstte kalsın */
+}
+
+#noBtn {
+    background-color: #ff3b30;
+    color: white;
+    position: relative; /* İlk başta normal durması için */
+    z-index: 50;
+}
+
+.hidden { display: none; }
+
+#resultSection p {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 20px;
+}
